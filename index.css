@@ -22,7 +22,7 @@ body {
 
 .name{
     text-align: center;
-    font-size: xx-large;
+    font-size: 25px;
     font-weight: bolder;
     letter-spacing: 1px;
     padding-bottom: 20px;
@@ -39,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     filter: invert(100%);
-    width: 25px;
+    width: 40px;
 }
 
 .linkicon{
