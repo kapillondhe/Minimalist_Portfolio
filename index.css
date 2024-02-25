@@ -57,6 +57,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 80vh;
+    padding-top: 5rem;
 }
 
 .headerLinks{
@@ -86,7 +87,7 @@ body {
     }
 
     .galleryContainer{
-        padding-top: 28rem;
+        padding-top: 105rem;
     }
 
     .headerLinks{
