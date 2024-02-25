@@ -91,9 +91,11 @@ body {
 
     .headerLinks{
         margin-right: 0.6rem;
+        font-size: small;
     }
 
     .headerLinkSelected{
         margin-right: 0.6rem;
+        font-size: small;
     }
 }
