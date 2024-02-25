@@ -60,6 +60,33 @@ body {
     padding-top: 5rem;
 }
 
+.projectContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+}
+
+.project {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.project img {
+    max-width: 250px;
+    height: auto;
+}
+
+.project-description {
+    color: black;
+    padding: 20px;
+}
+
 .headerLinks{
     text-decoration: none; 
     color: gray;
@@ -98,5 +125,10 @@ body {
     .headerLinkSelected{
         margin-right: 0.6rem;
         font-size: small;
+    }
+
+    .project img {
+        max-width: 150px;
+        height: auto;
     }
 }
