@@ -59,10 +59,23 @@ body {
     height: 80vh;
 }
 
+.headerLinks{
+    text-decoration: none; 
+    color: gray;
+    margin-right: 2rem;
+}
+
+.headerLinkSelected{
+    text-decoration: none; 
+    color:inherit;
+    margin-right: 2rem;
+}
+
 /* Media queries for responsiveness */
 @media only screen and (max-width: 600px) {
     .header {
         padding-right: 0;
+        margin-right: 1rem;
     }
 
     .bodyContainer {
@@ -75,5 +88,13 @@ body {
 
     .galleryContainer{
         padding-top: 28rem;
+    }
+
+    .headerLinks{
+        margin-right: 0.6rem;
+    }
+
+    .headerLinkSelected{
+        margin-right: 0.6rem;
     }
 }
