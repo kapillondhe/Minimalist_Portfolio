@@ -45,3 +45,8 @@ body {
 .linkicon{
     width: 25px;
 }
+
+.galleryImg{
+    width: 100%;
+    height: auto;
+}
