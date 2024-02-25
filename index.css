@@ -99,11 +99,6 @@ body {
     height: auto;
 }
 
-.blog img {
-    max-width: 250px;
-    height: auto;
-}
-
 .project-description {
     color: black;
     padding: 20px;
