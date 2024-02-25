@@ -51,6 +51,14 @@ body {
     height: auto;
 }
 
+.galleryContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
 /* Media queries for responsiveness */
 @media only screen and (max-width: 600px) {
     .header {
@@ -63,5 +71,9 @@ body {
 
     .name {
         font-size: large;
+    }
+
+    .galleryContainer{
+        padding-top: 28rem;
     }
 }
