@@ -77,7 +77,29 @@ body {
     align-items: center;
 }
 
+.blogContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    align-items: center;
+}
+
 .project img {
+    max-width: 250px;
+    height: auto;
+}
+
+.blog img {
     max-width: 250px;
     height: auto;
 }
