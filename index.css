@@ -56,8 +56,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .projectContainer{
@@ -128,10 +127,6 @@ body {
 
     .name {
         font-size: large;
-    }
-
-    .galleryContainer{
-        padding-top: 105rem;
     }
 
     .headerLinks{
