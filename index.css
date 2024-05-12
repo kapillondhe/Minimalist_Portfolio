@@ -46,6 +46,12 @@ body {
     width: 25px;
 }
 
+.linkicon:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1.1); /* Increase icon size on hover */
+  }
+
 .galleryImg{
     width: 100%;
     height: auto;
