@@ -100,7 +100,7 @@ body {
 }
 
 .project img {
-    max-width: 250px;
+    width: 250px;
     height: auto;
 }
 
@@ -120,6 +120,7 @@ body {
     color:inherit;
     margin-right: 2rem;
 }
+
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 600px) {
