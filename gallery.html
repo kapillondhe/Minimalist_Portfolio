@@ -6,34 +6,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Image gallery of Kapil Londhe
-            Kapil Londhe is a skilled full-stack developer, passionate about technology. Outside of work, he enjoy pursuing interests in psychology, cycling, and swimming.
+            Kapil Londhe is a skilled full-stack developer, passionate about technology. Outside of work, he enjoys pursuing interests in psychology, cycling, and swimming.
         ">
         <link rel="icon" href="KL.PNG" type="image/x-icon">
     </head>
     <body>
         <div class="header">
             <a href="/" class="headerLinks">
-                <h3>Home  </h1>
+                <h3>Home</h3>
             </a>
-            <a href="projects.html" class="headerLinks" >
-                <h3>Projects  </h1>
+            <a href="projects.html" class="headerLinks">
+                <h3>Projects</h3>
             </a>
-            <a href="gallery.html" class="headerLinkSelected" >
-                <h3>Gallery  </h1>
+            <a href="gallery.html" class="headerLinkSelected">
+                <h3>Gallery</h3>
             </a>
-            <a href="Blog.html" class="headerLinks" >
-                <h3>Blog  </h1>
+            <a href="Blog.html" class="headerLinks">
+                <h3>Blog</h3>
             </a>
             <a href="resume.html" class="headerLinks">
-                <h3>Resume</h1>
+                <h3>Resume</h3>
             </a>
         </div>
-        <div >
+        <div>
             <h1 style="text-align: center;">Gallery</h1>
         </div>
         <div class="galleryContainer">
-            <div style="display: grid; grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));gap: 10px;">
-
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 15px;">
                 <img src="./Gallery/Bhairavgad.jpeg" class="galleryImg" title="Bhairavgad" alt="Bhairavgad">
                 <img src="./Gallery/RihedamCycle.jpeg" class="galleryImg" title="RihedamCycle" alt="RihedamCycle">
                 <!--
@@ -48,9 +47,46 @@
                 <img src="./Gallery/SIH3.png" class="galleryImg" title="SIH 2019 winning team presentation" alt="SIH 2019 winning team presentation">
                 <img src="./Gallery/SIH4.png" class="galleryImg" title="SIH 2019 winning certificate" alt="SIH 2019 winning certificate">
                 <img src="./Gallery/SIH5.png" class="galleryImg" title="SIH 2019 winning news in sakal" alt="SIH 2019 winning news in sakal">
-                <img src="./Gallery/SGGS1.png" class="galleryImg" title="College project presentation to NACC commitee" alt="College project presentation to NACC commitee">
-
+                <img src="./Gallery/SGGS1.png" class="galleryImg" title="College project presentation to NACC committee" alt="College project presentation to NACC committee">
             </div>
         </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <img id="modal-img" src="" alt="Zoomed image">
+            </div>
+        </div>
+
+        <script>
+            // Get modal element
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modal-img");
+            var closeBtn = document.getElementsByClassName("close")[0];
+
+            // Get all images
+            var images = document.querySelectorAll(".galleryImg");
+
+            // Add click event to each image
+            images.forEach(function(image) {
+                image.onclick = function() {
+                    modal.style.display = "flex";
+                    modalImg.src = this.src;
+                };
+            });
+
+            // Close modal when clicking on the close button
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
+            };
+
+            // Close modal when clicking outside of the image
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
+        </script>
     </body>
 </html>
