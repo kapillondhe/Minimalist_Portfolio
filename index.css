@@ -101,11 +101,6 @@ body {
     align-items: center;
 }
 
-.project img {
-    width: 250px;
-    height: auto;
-}
-
 .project-description {
     color: black;
     padding: 20px;
@@ -166,6 +161,17 @@ body {
     cursor: pointer;
 }
 
+.projectLogo{
+    width: 250px;
+    height: auto;
+   border: 1px solid #ccc;
+}
+
+.projectImage{
+    height: 100px;
+    width: 100px;
+}
+
 /* Media queries for responsiveness */
 @media only screen and (max-width: 600px) {
     .header {
@@ -190,8 +196,9 @@ body {
         font-size: small;
     }
 
-    .project img {
+    .projectLogo{
         max-width: 150px;
         height: auto;
+       border: 1px solid #ccc;
     }
 }
